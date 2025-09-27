@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="">
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="" id="email" class="email">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="" id="password" class="password">
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
+
+<script type="module">
+    console.log("aaaaaaaaaaaaaaaaaa");  
+    import {User} from "../../../models/seeds.js"
+
+    for(let user of User.listUser){
+        console.log("===================");
+        console.log("id: ", user.userId);
+        console.log("user name: ", user.userName);
+        console.log("password: ", user.password);
+        console.log("email: ", user.email);
+        console.log("role: ", user.role);
+        console.log("===================");
+    }
+
+</script>
