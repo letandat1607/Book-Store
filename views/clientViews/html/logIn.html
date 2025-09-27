@@ -21,18 +21,16 @@
 </body>
 </html>
 
-<script type="module">
-    console.log("aaaaaaaaaaaaaaaaaa");  
-    import {User} from "../../../models/seeds.js"
+<script type="">
 
-    for(let user of User.listUser){
-        console.log("===================");
-        console.log("id: ", user.userId);
-        console.log("user name: ", user.userName);
-        console.log("password: ", user.password);
-        console.log("email: ", user.email);
-        console.log("role: ", user.role);
-        console.log("===================");
-    }
+    let usersData = [
+    { "userId": "u01", "userName": "LeDat", "password": "1607", "email": "dat16072004@gmail.com", "role": "admin" },
+    { "userId": "u02", "userName": "GiaPhuc", "password": "0000", "email": "phuc@gmail.com" },
+    { "userId": "u03", "userName": "MeoCon", "password": "1111", "email": "meocon@gmail.com" },
+    ]
+
+
+    localStorage.setItem("listUser", JSON.stringify(usersData));
+    
 
 </script>
